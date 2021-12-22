@@ -17,6 +17,8 @@ public class BuildManager {
         StellarProj.getInstance().getServer().getScheduler().runTaskAsynchronously(StellarProj.getInstance(), () -> {
             YamlConfig config = new YamlConfig(filename);
             List<Map<String, Object>> blocks = new ArrayList<>();
+
+            // By saving the build ordered by the y-axis, we know it will be placed from the bottom up. c:
             for (int y = selection.getMinY(); y <= selection.getMaxY(); y++) {
                 for (int x = selection.getMinX(); x <= selection.getMaxX(); x++) {
                     for (int z = selection.getMinZ(); z <= selection.getMaxZ(); z++) {
