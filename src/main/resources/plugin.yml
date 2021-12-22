@@ -1,0 +1,8 @@
+name: StellarProj
+version: '${project.version}'
+main: io.pulsarlabs.stellarproj.StellarProj
+api-version: 1.17
+commands:
+  getwand:
+  placebuild:
+  savebuild:
